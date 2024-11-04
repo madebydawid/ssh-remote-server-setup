@@ -1,1 +1,1 @@
-# ssh-remote-server-setup
+# Remote Linux Server Setup with SSH
