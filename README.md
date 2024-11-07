@@ -4,17 +4,17 @@
 The goal of this project is to set up a remote Linux server and configure secure SSH access. An optional step includes installing Fail2ban to add protection against brute-force attacks.
 
 ## Requirements
-- Set up a Linux server on a cloud provider (e.g., Azure, AWS)
-- Configure SSH access using *two separate SSH key pairs*
-- Set up an alias in `~/.ssh/config` for easier server access
-- Optional: install `fail2ban` for enhanced security
+- A cloud provider account (e.g., Azure, AWS) for the Linux server setup.
+- Configured SSH access using *two separate SSH key pairs*.
+- Alias configuration in `~/.ssh/config` for easier access.
+- (Optional) `Fail2ban` for additional security.
 
 ## Steps
 
 ### 1. Set Up the Server
 
-- [x] Register and configure a remote Linux server on a cloud provider.
-- [x] Retrieve the server’s IP address and initial access credentials.
+- [ ] Register and configure a remote Linux server on a cloud provider.
+- [ ] Retrieve the server’s IP address and initial access credentials.
 
 ### 2. Generate SSH Key Pairs
 
@@ -35,12 +35,10 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 ### 3. Add SSH Keys to the Server
 
-- [x] Copy the contents of each `.pub` file (public keys) to the server.
+- [ ] Copy the contents of each `.pub` file (public keys) to the server.
     - **View each `.pub` file’s content**:
         ```bash
         cat ~/.ssh/azure_key1.pub
-        ```
-        ```bash
         cat ~/.ssh/azure_key2.pub
         ```
 
@@ -62,7 +60,7 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 ### 4. Configure and Test SSH Connections
 
-- [x] Test connecting to the server with each key:
+- [ ] Test connecting to the server with each key:
     ```bash
     ssh -i ~/.ssh/azure_key1 username@server-ip
     ssh -i ~/.ssh/azure_key2 username@server-ip
@@ -95,7 +93,7 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 ### 6. Test SSH Connection with Alias
 
-- [x] Test the alias connection:
+- [ ] Test the alias connection:
     ```bash
     ssh myserver
     ```
