@@ -31,6 +31,7 @@ The goal of this project is to set up a remote Linux server and configure secure
 > **Note**: You’ll be prompted for a passphrase, which adds extra security. It can be left empty, but using a passphrase is **recommended**.
 
 ![Screenshot of SSH key generation](screenshot_path_here)
+![Both SSH keys]()
 
 ### 3. Add SSH Keys to the Server
 
@@ -92,6 +93,8 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 > To use both keys, add a separate block for `azure_key2` with a different alias.
 
+![cat-config]()
+
 ### 6. Test SSH Connection with Alias
 
 - [x] Test the alias connection:
@@ -99,7 +102,7 @@ The goal of this project is to set up a remote Linux server and configure secure
     ssh myserver
     ```
   
-![Screenshot of alias connection](screenshot_path_here)
+![SSH-config-login](screenshot_path_here)
 
 ### 7. Install Fail2ban for Enhanced Security (Optional)
 
@@ -131,6 +134,8 @@ The goal of this project is to set up a remote Linux server and configure secure
     sudo systemctl restart fail2ban
     sudo systemctl enable fail2ban
     ```
+
+![fail2ban](link)
 
 ---
 
