@@ -30,8 +30,8 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 > **Note**: You’ll be prompted for a passphrase, which adds extra security. It can be left empty, but using a passphrase is **recommended**.
 
-![Screenshot of SSH key generation](screenshot_path_here)
-![Both SSH keys]()
+![Model](https://github.com/madebydawid/ssh-remote-server-setup/blob/main/images/ssh-key-creation.jpg?raw=true)
+![Model](https://github.com/madebydawid/ssh-remote-server-setup/blob/main/images/both-ssh-keys.jpg?raw=true)
 
 ### 3. Add SSH Keys to the Server
 
@@ -59,8 +59,6 @@ The goal of this project is to set up a remote Linux server and configure secure
         ```bash
         chmod 600 ~/.ssh/authorized_keys # Set permissions to read/write for the owner only
         ```
-
-![Screenshot of adding keys to authorized_keys](screenshot_path_here)
 
 ### 4. Configure and Test SSH Connections
 
@@ -93,7 +91,7 @@ The goal of this project is to set up a remote Linux server and configure secure
 
 > To use both keys, add a separate block for `azure_key2` with a different alias.
 
-![cat-config]()
+![Model](https://github.com/madebydawid/ssh-remote-server-setup/blob/main/images/cat-config.png?raw=true)
 
 ### 6. Test SSH Connection with Alias
 
@@ -102,7 +100,7 @@ The goal of this project is to set up a remote Linux server and configure secure
     ssh myserver
     ```
   
-![SSH-config-login](screenshot_path_here)
+![Model](https://github.com/madebydawid/ssh-remote-server-setup/blob/main/images/ssh-config-login.png?raw=true)
 
 ### 7. Install Fail2ban for Enhanced Security (Optional)
 
@@ -135,7 +133,7 @@ The goal of this project is to set up a remote Linux server and configure secure
     sudo systemctl enable fail2ban
     ```
 
-![fail2ban](link)
+![Model](https://github.com/madebydawid/ssh-remote-server-setup/blob/main/images/fail2ban.png?raw=true)
 
 ---
 
